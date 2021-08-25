@@ -4,6 +4,7 @@ module.exports = {
       sizeLimit: '1mb',
     },
   },
+  pageExtensions: ['page.js'],
   env: {
     api: process.env.PORT + 'api/',
   },

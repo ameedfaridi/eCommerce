@@ -1,11 +1,11 @@
 'use strict';
 module.exports = {
   development: {
-    username: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME,
-    host: process.env.DB_HOST,
-    dialect: 'sqlite',
+    username: 'root',
+    password: 'admin123',
+    database: '499FEDB',
+    host: '127.0.0.1',
+    dialect: 'mysql',
   },
   test: {
     username: process.env.DB_USER,
@@ -20,9 +20,11 @@ module.exports = {
     password: process.env.DB_PASS,
     database: process.env.DB_NAME,
     host: process.env.DB_HOST,
-    dialect: 'postgres',
+    dialect: 'mysql',
     dialectOptions: {
-      ssl: true,
+      ssl: {
+        require: false,
+      },
     },
   },
 };
